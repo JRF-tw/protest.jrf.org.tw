@@ -20,7 +20,7 @@ var common = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React ES2015'
+      title: '社運測測看'
     })
   ],
 
@@ -62,7 +62,7 @@ switch (TARGET) {
   case 'dev':
     module.exports = merge(common, {
       entry: [
-        'webpack-dev-server/client?http://localhost:8080',
+        'webpack-dev-server/client?http://localhost:8000',
         'webpack/hot/dev-server'
       ]
     });

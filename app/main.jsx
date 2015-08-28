@@ -1,13 +1,14 @@
 import './stylesheets/main.css';
 import React from 'react';
-import  from './src/socialMovementCrime';
+import SocialMovementCrime from './src/socialMovementCrime';
 
-// init shell
-renderShell();
 
-function renderShell() {
-  var shell = document.createElement('div');
-  shell.className = 'app-shell';
-  document.body.appendChild(shell);
-  React.render(<FilterableProductTable/>, shell);
+function renderSocialMovementCrime() {
+  var element = document.createElement('div');
+  element.className = 'socialMovementCrime';
+  document.body.appendChild(element);
+  React.render(<SocialMovementCrime />, element);
 }
+
+renderSocialMovementCrime();
+

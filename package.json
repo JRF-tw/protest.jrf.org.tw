@@ -1,5 +1,5 @@
 {
-  "name": "law in social movement",
+  "name": "law-in-social-movement",
   "version": "0.0.1",
   "description": "",
   "main": "webpack.config.js",
@@ -21,7 +21,7 @@
   "private": true,
   "scripts": {
     "build": "TARGET=build webpack",
-    "start": "TARGET=dev webpack-dev-server --devtool eval-source --progress --colors --hot --inline --history-api-fallback"
+    "start": "TARGET=dev webpack-dev-server --devtool eval-source --progress --colors --hot --inline --history-api-fallback --port 8000"
   },
   "repository": {
     "type": "git",
