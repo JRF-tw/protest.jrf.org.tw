@@ -1,8 +1,8 @@
 import React from 'react';
-import { questionData, answerData, defaultScore } from './data';
-import QuestionTable from './components/questionTable'
-import Result from './components/result'
-import AnswerTable from './components/answerTable'
+import { questionData, answerData, defaultScore } from '../data';
+import QuestionTable from './questionTable'
+import Result from './result'
+import AnswerTable from './answerTable'
 
 class SocialMovementCrime extends React.Component {
 
