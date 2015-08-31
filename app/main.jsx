@@ -1,16 +1,32 @@
+require("babel/polyfill");
+
 import './stylesheets/main.css';
 import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import Router from "react-router";
 import routes from './src/routes';
+import lawInSocialMovementApp from './src/reducers';
+
 
 
 function renderSocialMovementCrime() {
+  var store = createStore(lawInSocialMovementApp);
   var element = document.createElement('div');
   element.className = 'socialMovementCrime';
   document.body.appendChild(element);
-  Router.run(routes, Router.HistoryLocation, (Handler, state) => {
-    React.render(<Handler/>, element);
+  Router.run(routes, Router.HistoryLocation, (Handler, routerState) => {
+    React.render(
+      <Provider store={store}>
+        {() => <Handler routerState={routerState} />}
+      </Provider>,
+      element
+    );
   });
 }
+
+
+
+
 
 renderSocialMovementCrime();

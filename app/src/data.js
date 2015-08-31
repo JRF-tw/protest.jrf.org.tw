@@ -16,6 +16,7 @@ export const questionData = [
   { question: "我把自己綁在路中間，希望官員的車子能在前面停下來。", score: "n", done: false },
   { question: "建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。", score: "o", done: false }
 ];
+
 export const answerData = [
   {
     answer: "刑法§135條，妨礙公務罪。",

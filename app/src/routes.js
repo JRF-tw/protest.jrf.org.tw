@@ -1,8 +1,8 @@
 import { Route } from "react-router";
 import React from "react";
 
-import SocialMovementCrime from "./components/SocialMovementCrime";
+import App from "./containers/App";
 
 export default (
-  <Route handler={ SocialMovementCrime } path="/" />
+  <Route handler={ App } path="/" />
 );

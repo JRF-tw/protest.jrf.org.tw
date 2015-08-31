@@ -28,8 +28,9 @@ var common = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel?stage=1'],
-        include: path.resolve(ROOT_PATH, 'app')
+        loaders: ['react-hot', 'babel-loader?experimental'],
+        include: path.resolve(ROOT_PATH, 'app'),
+        exclude: /node_modules/
       },
 
       {
