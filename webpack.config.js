@@ -16,7 +16,7 @@ var common = {
   resolveLoader: {
     alias: {
       'static': 'file-loader?name=[path][name].[ext]?[hash]&context=app',
-      'static-styles': 'file-loader?name=[path][name].[ext]?[hash]&context=app/styles'
+      'static-styles': 'file-loader?name=[path][name].[ext]&context=app/styles'
     }
   },
 
@@ -40,7 +40,7 @@ var common = {
       },
       {
         test: /\/styles\/.+\.css$/,
-        loaders: ['static-styles', 'css']
+        loaders: ['static-styles']
       },
       {
         test: /\/styles\/.+\.(jpg|png|gif)$/,
