@@ -1,6 +1,6 @@
 require("babel/polyfill");
 
-import './stylesheets/main.css';
+import './styles/css/checklist.css';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';

@@ -34,8 +34,8 @@ var common = {
       },
 
       {
-        test: /\.css$/,
-        loaders: ['style', 'css']
+        test: /\.(css|png|jpg|gif)$/,
+        loaders: ['file?name=[path][name].[ext]?[hash]&context=app/styles']
       }
     ]
   }
