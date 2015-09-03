@@ -13,6 +13,12 @@ var common = {
     extensions: ['', '.js', '.jsx']
   },
 
+  resolveLoader: {
+    alias: {
+      'static': 'file-loader?name=[path][name].[ext]?[hash]&context=app/styles'
+    }
+  },
+
   output: {
     path: path.resolve(ROOT_PATH, 'build'),
     filename: 'bundle.js'
@@ -31,11 +37,6 @@ var common = {
         loaders: ['react-hot', 'babel-loader?experimental'],
         include: path.resolve(ROOT_PATH, 'app'),
         exclude: /node_modules/
-      },
-
-      {
-        test: /\.(css|png|jpg|gif)$/,
-        loaders: ['file?name=[path][name].[ext]?[hash]&context=app/styles']
       }
     ]
   }
