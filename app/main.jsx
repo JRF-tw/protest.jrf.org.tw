@@ -1,7 +1,8 @@
 require("babel/polyfill");
 
-import 'static!./styles/css/checklist.css';
-import 'static!./styles/images/cover.jpg';
+import './index.html';
+import './styles/css/checklist.css';
+import './styles/images/cover.jpg';
 
 import React from 'react';
 import { createStore } from 'redux';

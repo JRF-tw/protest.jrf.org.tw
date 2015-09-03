@@ -15,7 +15,8 @@ var common = {
 
   resolveLoader: {
     alias: {
-      'static': 'file-loader?name=[path][name].[ext]?[hash]&context=app/styles'
+      'static': 'file-loader?name=[path][name].[ext]?[hash]&context=app',
+      'static-styles': 'file-loader?name=[path][name].[ext]?[hash]&context=app/styles'
     }
   },
 
@@ -25,9 +26,6 @@ var common = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      title: '社運測測看'
-    })
   ],
 
   module: {
@@ -37,7 +35,20 @@ var common = {
         loaders: ['react-hot', 'babel-loader?experimental'],
         include: path.resolve(ROOT_PATH, 'app'),
         exclude: /node_modules/
-      }
+      },
+      {
+        test: /\.html?$/,
+        include: path.resolve(ROOT_PATH, 'app'),
+        loaders: ['static']
+      },
+      {
+        test: /\/styles\/.+\.css$/,
+        loaders: ['static-styles', 'css']
+      },
+      {
+        test: /\/styles\/.+\.(jpg|png|gif)$/,
+        loaders: ['static-styles']
+      },
     ]
   }
 };
