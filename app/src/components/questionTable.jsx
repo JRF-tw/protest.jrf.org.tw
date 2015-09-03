@@ -17,7 +17,7 @@ class QuestionTable extends React.Component {
         arr[score] = value;
         return onQuestionChange(arr);
       };
-      return <QuestionRow onChange={onQuestionRowChange} question={item.question} key={item.score} />
+      return <QuestionRow onChange={onQuestionRowChange} question={item.question} key={item.score} score={item.score} />
     });
 
     return (<div className="questionTable">

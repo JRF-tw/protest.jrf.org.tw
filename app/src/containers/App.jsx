@@ -15,14 +15,20 @@ class App extends React.Component {
     // Injected by connect() call:
     if (state.showResult) {
       return (<div>
-        <QuestionTable questionData={questionData} onQuestionChange={arr => dispatch(updateScore(arr))} />
-        <Result onResultClick={bool => dispatch(showResult(bool))} />
+        <div className="questions">
+          <h1>社運測測看</h1>
+          <QuestionTable questionData={questionData} onQuestionChange={arr => dispatch(updateScore(arr))} />
+          <Result onResultClick={bool => dispatch(showResult(bool))} />
+        </div>
         <AnswerTable answerData={answerData} score={state.score} />
         </div>);
     } else {
       return (<div>
-        <QuestionTable questionData={questionData} onQuestionChange={arr => dispatch(updateScore(arr))} />
-        <Result onResultClick={bool => dispatch(showResult(bool))} />
+        <div className="questions">
+          <h1>社運測測看</h1>
+          <QuestionTable questionData={questionData} onQuestionChange={arr => dispatch(updateScore(arr))} />
+          <Result onResultClick={bool => dispatch(showResult(bool))} />
+        </div>
         </div>);
     }
   }

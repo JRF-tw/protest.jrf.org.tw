@@ -13,12 +13,13 @@ class QuestionRow extends React.Component {
   }
 
   render() {
+    var checkboxId = "checkbox-" + this.props.score;
     return (
       <div className="questionRow">
-        <input type="checkbox" defaultChecked={false} onChange={this.handleChange} />
-        <div className="question">
+        <input type="checkbox" id={checkboxId} defaultChecked={false} onChange={this.handleChange} />
+        <label className="question" htmlFor={checkboxId}>
           {this.props.question}
-        </div>
+        </label>
       </div>
     );
   }

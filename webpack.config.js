@@ -25,9 +25,6 @@ var common = {
     filename: 'bundle.js'
   },
 
-  plugins: [
-  ],
-
   module: {
     loaders: [
       {
