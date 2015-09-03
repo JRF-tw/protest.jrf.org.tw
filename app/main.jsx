@@ -17,7 +17,7 @@ function renderSocialMovementCrime() {
   var store = createStore(lawInSocialMovementApp);
   var element = document.createElement('div');
   element.className = 'socialMovementCrime';
-  document.body.appendChild(element);
+  document.body.insertBefore(element, document.body.firstChild);
   Router.run(routes, Router.HistoryLocation, (Handler, routerState) => {
     React.render(
       <Provider store={store}>
