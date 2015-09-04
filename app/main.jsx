@@ -12,7 +12,6 @@ import routes from './src/routes';
 import lawInSocialMovementApp from './src/reducers';
 
 
-
 function renderSocialMovementCrime() {
   var store = createStore(lawInSocialMovementApp);
   var element = document.createElement('div');
