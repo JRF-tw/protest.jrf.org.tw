@@ -1,4 +1,4 @@
-require("babel/polyfill");
+import "babel/polyfill";
 
 import './index.html';
 import './styles/css/checklist.css';
