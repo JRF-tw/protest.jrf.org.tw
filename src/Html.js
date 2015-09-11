@@ -28,12 +28,9 @@ export default class Html extends Component {
           <meta charSet="utf-8"/>
           <link href={cdn + 'ajax/libs/normalize/3.0.3/normalize.min.css'}
             rel="stylesheet" type="text/css" />
+          <link href={assets.styles.main}
+            rel="stylesheet" type="text/css" />
           {DocumentMeta.renderAsReact()}
-          {/* styles (will be present only in production with webpack extract text plugin) */}
-          {Object.keys(assets.styles).map((style, i) =>
-            <link href={assets.styles[style]} key={i} media="screen, projection"
-                  rel="stylesheet" type="text/css"/>
-          )}
         </head>
         <body>
           <div id="content" className="socialMovementCrime" dangerouslySetInnerHTML={{__html: content}}/>

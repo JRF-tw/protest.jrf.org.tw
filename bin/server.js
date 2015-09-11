@@ -13,7 +13,7 @@ global.__DEVELOPMENT__ = process.env.NODE_ENV !== 'production';
 if (__DEVELOPMENT__) {
   if (!require('piping')({
       hook: true,
-      ignore: /(\/\.|~$|\.json|\.scss$\.css$)/i
+      ignore: /(\/\.|~$|\.json|\.scss$)/i
     })) {
     return;
   }
