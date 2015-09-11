@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 class Result extends React.Component {
 
-  constructor(props){
+  static propTypes = {
+    onResultClick: PropTypes.func.isRequired
+  }
+
+  constructor(props) {
     super(props);
     this.showResult = this.showResult.bind(this);
   }
 
-  showResult(){
+  showResult() {
     this.props.onResultClick(true);
   }
 

@@ -27,10 +27,10 @@ function showResult(state = false, action) {
   }
 }
 
-const lawInSocialMovementApp = combineReducers({
+const App = combineReducers({
   score,
   showResult
 });
 
-export default lawInSocialMovementApp;
+export default App;
 

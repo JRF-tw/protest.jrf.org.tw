@@ -7,5 +7,5 @@ export function updateScore(arr) {
 }
 
 export function showResult(bool) {
-  return { type: SHOW_RESULT, bool }
+  return { type: SHOW_RESULT, bool };
 }
