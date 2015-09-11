@@ -8,4 +8,27 @@ License
 
 See [LICENSE](LICENSE.md).
 
-Templates from [Ositoozy/react-example-es2015](https://github.com/Ositoozy/react-example-es2015) is under ISC License.
+First templates from [Ositoozy/react-example-es2015](https://github.com/Ositoozy/react-example-es2015) is under ISC License.
+
+Second templates from [erikras/react-redux-universal-hot-example](https://github.com/erikras/react-redux-universal-hot-example) is under MIT License.
+
+
+## Installation
+
+```
+npm install
+```
+
+## Running Dev Server
+
+```
+npm run dev
+```
+
+## Building and Running Production Server
+
+```
+npm run build
+npm run start
+```
+
