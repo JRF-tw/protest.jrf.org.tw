@@ -28,7 +28,6 @@ const meta = {
   }
 };
 
-
 class App extends React.Component {
 
   static propTypes = {

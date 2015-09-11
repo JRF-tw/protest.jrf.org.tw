@@ -13,11 +13,12 @@ class AnswerRow extends React.Component {
   }
 
   render() {
+    const {answer, detail} = this.props;
     return (<div className="answerRow">
         <div className="answer">
-          {this.props.answer}
+          {answer}
         </div>
-        <div className="answerDetail" dangerouslySetInnerHTML={{__html: this.props.detail}} />
+        <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
       </div>
     );
   }

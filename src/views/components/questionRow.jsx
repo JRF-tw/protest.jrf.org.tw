@@ -19,12 +19,13 @@ class QuestionRow extends React.Component {
   }
 
   render() {
-    const checkboxId = 'checkbox-' + this.props.score;
+    const {question, score} = this.props;
+    const checkboxId = 'checkbox-' + score;
     return (
       <div className="questionRow">
         <input type="checkbox" id={checkboxId} defaultChecked={false} onChange={this.handleChange} />
         <label className="question" htmlFor={checkboxId}>
-          {this.props.question}
+          {question}
         </label>
       </div>
     );
