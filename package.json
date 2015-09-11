@@ -1,14 +1,14 @@
 {
-  "name": "react-redux-universal-hot-example",
-  "description": "Example of an isomorphic (universal) webapp using react redux and hot reloading",
-  "author": "Erik Rasmussen <rasmussenerik@gmail.com> (http://github.com/erikras)",
+  "name": "law-in-social-movement",
+  "version": "0.0.1",
+  "description": "",
+  "author": "billy3321, rschiang",
   "license": "MIT",
-  "version": "0.0.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erikras/react-redux-universal-hot-example"
+    "url": "https://github.com/JRF-tw/law_in_social_movement"
   },
-  "homepage": "https://github.com/erikras/react-redux-universal-hot-example",
+  "homepage": "http://protest.jrf.org.tw",
   "keywords": [
     "react",
     "isomorphic",
@@ -20,7 +20,9 @@
     "redux",
     "starter",
     "boilerplate",
-    "babel"
+    "babel",
+    "social movement",
+    "law"
   ],
   "main": "bin/server.js",
   "scripts": {

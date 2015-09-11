@@ -27,7 +27,7 @@ module.exports = function (config) {
           { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel?stage=0&optional=runtime&plugins=typecheck']},
           { test: /\.json$/, loader: 'json-loader' },
           { test: /\.scss$/, loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap' },
-          { test: /\.css$/, loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version!css?outputStyle=expanded&sourceMap' }
+          { test: /\.css$/, loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version' }
         ]
       },
       resolve: {
@@ -35,7 +35,7 @@ module.exports = function (config) {
           'src',
           'node_modules'
         ],
-        extensions: ['', '.json', '.js']
+        extensions: ['', '.json', '.js', '.jsx']
       },
       plugins: [
         // hot reload
