@@ -43,7 +43,7 @@ by 雨蒼 < billy3321 -at- gmail.com >
 
 接著，我想要挑戰 isomorphic，把網頁預先 render 出來，避免 SEO 的問題。
 
-當時我有詢問過 @coodoo ，也做了一些 [問答](https://gist.github.com/coodoo/59891964b06a603e2dc8) ， @coodoo 當時建議我參考他的範例，不過我稍微瀏覽過幾個以後，選擇了 @erikras 的 [範例](https://github.com/erikras/react-redux-universal-hot-example) 作為 template。
+當時我有詢問過 @coodoo ，也做了一些 [問答](https://gist.github.com/coodoo/59891964b06a603e2dc8) ， @coodoo 當時建議我參考他的 [範例](https://github.com/coodoo/react-redux-isomorphic-example) ，不過我稍微瀏覽過幾個以後，選擇了 @erikras 的 [範例](https://github.com/erikras/react-redux-universal-hot-example) 作為 template。
 
 
 其中這邊有兩個坑，大概卡了我兩天的時間。
