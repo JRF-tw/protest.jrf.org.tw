@@ -23,7 +23,7 @@ by 雨蒼 < billy3321 -at- gmail.com >
 
 我參考的 template 是 [這個](https://github.com/Ositoozy/react-example-es2015) 。
 
-我把網頁修改成 webpack 可以運作的方式，並且把語法轉為 ES2015 的語法。
+我把網頁修改成 webpack 可以運作的方式，並且把語法轉為 ES2015 的語法。其中關於轉換語法，可以參考 [這篇文章](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html) 。
 
 [結果請點此](https://github.com/JRF-tw/law_in_social_movement/tree/61e0a038aab781594553248a64089b9e1b43fcef)
 
