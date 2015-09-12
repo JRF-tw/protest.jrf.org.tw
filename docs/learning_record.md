@@ -6,7 +6,7 @@ by 雨蒼 < billy3321 -at- gmail.com >
 這個小網頁，原先是希望可以在選擇社運場合做的事情以後，就會跳出相應的法條。
 
 
-## 學習使用ReactJS
+## 學習使用 ReactJS
 
 我先參考 [這個網頁](https://facebook.github.io/react/docs/thinking-in-react.html)（[中文翻譯版](http://reactjs.cn/react/docs/thinking-in-react.html)），學習如何把網頁用 React 的方式重新思考一次。
 
@@ -17,7 +17,7 @@ by 雨蒼 < billy3321 -at- gmail.com >
 [當時的網頁](https://github.com/JRF-tw/law_in_social_movement/blob/33ebbd92aeafd7bc75ffef2ff780d336b31b2a32/index.html)
 
 
-## Webpack、ES2015與程式碼結構
+## Webpack、ES2015 與程式碼結構
 
 完成網頁後，接著我需要進一步把網站以結構化的方式架構起來，並且轉移到 ES2015。
 
@@ -77,7 +77,7 @@ by 雨蒼 < billy3321 -at- gmail.com >
 以把 css 包入 javascript。
 
 
-## Forever，Daemonlized and use Nginx
+## Forever，Daemonlized 與 Nginx
 
 最後，我要把 App 放上 Server 讓他提供服務，所以我選擇了 forever 來提供服務。
 
