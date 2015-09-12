@@ -26,7 +26,7 @@ class AnswerTable extends React.Component {
     });
 
     if (!answersEmpty) {
-      result = (<div className="answers">
+      result = (<div className="answers" id="answers">
           <div className="answerTable">
             {answers}
           </div>

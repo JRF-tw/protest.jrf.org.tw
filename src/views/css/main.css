@@ -68,6 +68,75 @@ body::before {
     width: 100%;
     font-size: inherit
 }
+.answerRow button {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 3em;
+  width: 3em;
+  outline: 0;
+  border: 0;
+  background: none;
+  text-indent: -9999%;
+  pointer-events: none;
+}
+.answerRow button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  border-radius: .3em;
+  background: #000000;
+  transform-origin: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all .25s ease-in-out;
+  transform: translate(75%, -50%) rotate(45deg);
+}
+
+.answerRow button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  border-radius: .3em;
+  background: #000000;
+  transform-origin: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all .25s ease-in-out;
+  transform: translate(-75%, -50%) rotate(-45deg);
+}
+
+.answerRow.open button:before, .answerRow.open button:after {
+  height: 14px;
+}
+
+.answerRow.open button:before {
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+
+.answerRow.open button:after {
+  transform: translate(0%, -50%) rotate(45deg);
+}
+
+.answerRow.open .answerDetail {
+  height: auto;
+}
+
+.answerDetail {
+  height: 0;
+  overflow: hidden;
+  transition: all .2s ease-in;
+}
+
+.answer {
+  overflow: hidden;
+  cursor: pointer;
+}
 .questions:empty,
 .answers:empty {
     display: none

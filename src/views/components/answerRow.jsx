@@ -10,12 +10,35 @@ class AnswerRow extends React.Component {
 
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      open: false,
+      className: 'answerRow'
+    };
+  }
+
+  handleClick() {
+    const {open} = this.state;
+    if (open) {
+      this.setState({
+        open: false,
+        className: 'answerRow'
+      });
+    } else {
+      this.setState({
+        open: true,
+        className: 'answerRow open'
+      });
+    }
   }
 
   render() {
+    console.log(this.state);
     const {answer, detail} = this.props;
-    return (<div className="answerRow">
-        <div className="answer">
+    const {className} = this.state;
+    return (<div className={className}>
+        <button>toggle</button>
+        <div className="answer" onClick={this.handleClick}>
           {answer}
         </div>
         <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
