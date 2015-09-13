@@ -16,7 +16,7 @@ class Result extends React.Component {
   }
 
   render() {
-    return (<button onClick={this.showResult} >這些可能犯什麼法呢？看看結果 »</button>);
+    return (<button onClick={this.showResult} >檢察官可能會用哪些罪名起訴你？看看結果 »</button>);
   }
 }
 
