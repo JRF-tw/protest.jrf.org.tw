@@ -1,8 +1,11 @@
 
 export const questionData = [
+  { question: '我前往抗爭現場。', score: 'p', done: false },
+  { question: '我經過鎮暴警察的盾牌前面。', score: 'q', done: false },
   { question: '我和警察發生推擠。', score: 'a', done: false },
   { question: '警察罵我，我罵回去。', score: 'b', done: false },
   { question: '警察抓我的時候我掙扎抗拒。', score: 'c', done: false },
+  { question: '我被警察攻擊，並因此倒下。', score: 'r', done: false },
   { question: '我和大家一起罵政府機關。', score: 'd', done: false },
   { question: '我和大家一起罵政府機關的官員。', score: 'e', done: false },
   { question: '我拿著麥克風，對大家宣講。', score: 'f', done: false },
@@ -15,9 +18,6 @@ export const questionData = [
   { question: '政府官員要離開，我擋在車子前面阻擋。', score: 'm', done: false },
   { question: '我把自己綁在路中間，希望官員的車子能在前面停下來。', score: 'n', done: false },
   { question: '建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。', score: 'o', done: false },
-  { question: '我前往抗爭現場', score: 'p', done: false },
-  { question: '我走過鎮暴警察的盾牌前面', score: 'q', done: false },
-  { question: '我被警察攻擊因而倒下', score: 'r', done: false }
 ];
 
 export const answerData = [
@@ -89,6 +89,9 @@ export const defaultScore = {
   l: false,
   m: false,
   n: false,
-  o: false
+  o: false,
+  p: false,
+  q: false,
+  r: false
 };
 
