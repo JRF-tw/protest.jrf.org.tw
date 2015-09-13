@@ -33,6 +33,7 @@ export default class Html extends Component {
           <meta content="width=device-width, initial-scale=1.0" name="viewport" />
           <link href={cdn + 'ajax/libs/normalize/3.0.3/normalize.min.css'}
             rel="stylesheet" type="text/css" />
+          <link href={assets.styles.main} rel="stylesheet" type="text/css" />
           {DocumentMeta.renderAsReact()}
         </head>
         <body>
