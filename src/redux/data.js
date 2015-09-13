@@ -14,19 +14,22 @@ export const questionData = [
   { question: '警察舉牌三次後，群眾不想離開。', score: 'l', done: false },
   { question: '政府官員要離開，我擋在車子前面阻擋。', score: 'm', done: false },
   { question: '我把自己綁在路中間，希望官員的車子能在前面停下來。', score: 'n', done: false },
-  { question: '建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。', score: 'o', done: false }
+  { question: '建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。', score: 'o', done: false },
+  { question: '我前往抗爭現場', score: 'p', done: false },
+  { question: '我走過鎮暴警察的盾牌前面', score: 'q', done: false },
+  { question: '我被警察攻擊因而倒下', score: 'r', done: false }
 ];
 
 export const answerData = [
   {
     answer: '刑法§135條，妨礙公務罪。',
     detail: '對於公務員依法執行職務時，施強暴脅迫者，處三年以下有期徒刑、拘役或三百元以下罰金。<br /><br />意圖使公務員執行一定之職務或妨害其依法執行一定之職務或使公務員辭職，而施強暴脅迫者，亦同。<br /><br />犯前二項之罪，因而致公務員於死者，處無期徒刑或七年以上有期徒刑；致重傷者，處三年以上、十年以下有期徒刑。',
-    calculate: (state) => { return ( state.a || state.b || state.c || state.o ) ? true : false; },
+    calculate: (state) => { return ( state.a || state.b || state.c || state.o || state.p || state.q || state.r ) ? true : false; },
     key: 'criminal135'
   }, {
     answer: '刑法§136條，聚眾妨礙公務罪。',
     detail: '公然聚眾犯前條之罪者，在場助勢之人，處一年以下有期徒刑、拘役或三百元以下罰金。首謀及下手實施強暴脅迫者，處一年以上、七年以下有期徒刑。',
-    calculate: (state) => { return (( state.a || state.b || state.c || state.o ) && ( state.f || state.g )) ? true : false; },
+    calculate: (state) => { return (( state.a || state.b || state.c || state.o || state.p || state.q || state.r ) && ( state.f || state.g )) ? true : false; },
     key: 'criminal136'
   }, {
     answer: '刑法§140條侮辱公務人員、侮辱公署罪',
