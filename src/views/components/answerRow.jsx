@@ -37,8 +37,8 @@ class AnswerRow extends React.Component {
     const {answer, detail} = this.props;
     const {className} = this.state;
     return (<div className={className}>
-        <button>toggle</button>
-        <div className="answer" onClick={this.handleClick}>
+        <div className="answer">
+          <button className="toggle" onClick={this.handleClick}>顯示</button>
           {answer}
         </div>
         <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
