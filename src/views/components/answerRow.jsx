@@ -1,5 +1,6 @@
 
 import React, {PropTypes} from 'react';
+import classNames from 'classnames';
 
 class AnswerRow extends React.Component {
 
@@ -12,8 +13,7 @@ class AnswerRow extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      open: false,
-      className: 'answerRow'
+      open: false
     };
   }
 
@@ -21,13 +21,11 @@ class AnswerRow extends React.Component {
     const {open} = this.state;
     if (open) {
       this.setState({
-        open: false,
-        className: 'answerRow'
+        open: false
       });
     } else {
       this.setState({
-        open: true,
-        className: 'answerRow open'
+        open: true
       });
     }
   }
@@ -35,10 +33,14 @@ class AnswerRow extends React.Component {
   render() {
     console.log(this.state);
     const {answer, detail} = this.props;
-    const {className} = this.state;
-    return (<div className={className}>
+    let classes = classNames({
+      'answerRow': true,
+      'accordion': true,
+      'open': this.state.open
+    });
+    return (<div className={classes}>
         <div className="answer">
-          <button className="toggle" onClick={this.handleClick}>顯示</button>
+          <button className="toggle" onClick={this.handleClick}>{this.state.open ? "隱藏" : "顯示"}</button>
           {answer}
         </div>
         <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
