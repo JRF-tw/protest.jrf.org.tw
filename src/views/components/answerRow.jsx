@@ -33,14 +33,14 @@ class AnswerRow extends React.Component {
   render() {
     console.log(this.state);
     const {answer, detail} = this.props;
-    let classes = classNames({
+    const classes = classNames({
       'answerRow': true,
       'accordion': true,
       'open': this.state.open
     });
     return (<div className={classes}>
-        <div className="answer">
-          <button className="toggle" onClick={this.handleClick}>{this.state.open ? "隱藏" : "顯示"}</button>
+        <div className="answer" onClick={this.handleClick}>
+          <button className="toggle" onClick={this.handleClick}>{this.state.open ? '隱藏' : '顯示'}</button>
           {answer}
         </div>
         <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
