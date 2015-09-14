@@ -2,6 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import serialize from 'serialize-javascript';
 import DocumentMeta from 'react-document-meta';
 const cdn = 'https://cdnjs.cloudflare.com/';
+import { trackingId } from "./config";
+import ga from "./utils/ga";
 
 /**
  * Wrapper component containing HTML metadata and boilerplate tags.
@@ -34,6 +36,7 @@ export default class Html extends Component {
           <link href={cdn + 'ajax/libs/normalize/3.0.3/normalize.min.css'}
             rel="stylesheet" type="text/css" />
           <link href={assets.styles.main} rel="stylesheet" type="text/css" />
+          <script dangerouslySetInnerHTML={ {__html: ga.replace('{trackingId}', trackingId)} } />
           {DocumentMeta.renderAsReact()}
         </head>
         <body>

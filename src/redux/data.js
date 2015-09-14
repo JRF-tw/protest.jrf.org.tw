@@ -17,7 +17,7 @@ export const questionData = [
   { question: '警察舉牌三次後，群眾不想離開。', score: 'o', done: false },
   { question: '政府官員要離開，我擋在車子前面阻擋。', score: 'p', done: false },
   { question: '我把自己綁在路中間，希望官員的車子能在前面停下來。', score: 'q', done: false },
-  { question: '建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。', score: 'r', done: false },
+  { question: '建築物即將被強制拆除，我待在建築物內部，要阻止建築物被拆掉。', score: 'r', done: false }
 ];
 
 export const answerData = [
