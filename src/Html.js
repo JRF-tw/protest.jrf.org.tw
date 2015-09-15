@@ -2,8 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import serialize from 'serialize-javascript';
 import DocumentMeta from 'react-document-meta';
 const cdn = 'https://cdnjs.cloudflare.com/';
-import { trackingId } from "./config";
-import ga from "./utils/ga";
+import { gtmId } from "./config";
+import gtm from "./utils/gtm";
 
 /**
  * Wrapper component containing HTML metadata and boilerplate tags.
@@ -24,6 +24,10 @@ export default class Html extends Component {
   render() {
     const {assets, component, store} = this.props;
     const content = React.renderToString(component);
+    const gtmStyles = {
+      display: 'none',
+      visibility: 'hidden'
+    };
     // add this to head if you have seperated css file
     // <link href={assets.styles.main} rel="stylesheet" type="text/css" />
     // if you want to transfer data to client javascript, add this and use window.__data as store
@@ -36,7 +40,9 @@ export default class Html extends Component {
           <link href={cdn + 'ajax/libs/normalize/3.0.3/normalize.min.css'}
             rel="stylesheet" type="text/css" />
           <link href={assets.styles.main} rel="stylesheet" type="text/css" />
-          <script dangerouslySetInnerHTML={ {__html: ga.replace('{trackingId}', trackingId)} } />
+          <noscript><iframe src={ '//www.googletagmanager.com/ns.html?id=' + gtmId }
+            height="0" width="0" style={gtmStyles}></iframe></noscript>
+          <script dangerouslySetInnerHTML={ {__html: gtm.replace('{gtmId}', gtmId)} } />
           {DocumentMeta.renderAsReact()}
         </head>
         <body>

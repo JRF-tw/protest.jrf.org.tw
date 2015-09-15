@@ -5,7 +5,7 @@ module.exports = {
     app: {
       name: '社運測測看'
     },
-    trackingId: ''
+    gtmId: ''
   },
   production: {
     isProduction: true,
@@ -13,6 +13,6 @@ module.exports = {
     app: {
       name: '社運測測看'
     },
-    trackingId: 'UA-52700460-6'
+    gtmId: 'GTM-TVR9Z5'
   }
 }[process.env.NODE_ENV || 'development'];
