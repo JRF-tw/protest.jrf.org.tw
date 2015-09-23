@@ -64,12 +64,12 @@ describe('AppWithResult', () => {
 
   it('should render with correct answer', () => {
     const text = dom.getElementsByClassName('answer')[0].textContent;
-    expect(text).to.equal(answerData[0].answer);
+    expect(text.replace('顯示', '')).to.equal(answerData[0].answer);
   });
 
   it('should render with correct answer detail', () => {
     const text = dom.getElementsByClassName('answerDetail')[0].textContent;
-    expect(text).to.equal(answerData[0].detail);
+    expect(text).to.equal(answerData[0].detail.replace(/<br \/>/g, ''));
   });
 
 });

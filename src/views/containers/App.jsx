@@ -1,9 +1,10 @@
 import React, {PropTypes} from 'react';
-import {questionData, answerData} from '../../redux/data';
+import {questionData, answerData, readme} from '../../redux/data';
 import {connect} from 'react-redux';
 import {updateScore, showResult} from '../../redux/actions';
 import QuestionTable from '../components/questionTable';
 import Result from '../components/result';
+import Readme from '../components/readme';
 import AnswerTable from '../components/answerTable';
 import DocumentMeta from 'react-document-meta';
 
@@ -54,6 +55,7 @@ class App extends React.Component {
             <Result onResultClick={bool => dispatch(showResult(bool))} />
           </div>
           <AnswerTable answerData={answerData} score={state.score} />
+          <Readme readme={readme} />
         </div>
       );
     } else {

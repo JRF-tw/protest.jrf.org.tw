@@ -20,7 +20,7 @@ class AnswerTable extends React.Component {
       let answerResult = null;
       if (item.calculate(score)) {
         answersEmpty = false;
-        answerResult = (<AnswerRow answer={item.answer} detail={item.detail} key={item.key} />);
+        answerResult = (<AnswerRow answer={item.answer} detail={item.detail} referenceData={item.references} key={item.key} />);
       }
       return answerResult;
     });

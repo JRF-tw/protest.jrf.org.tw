@@ -19,6 +19,12 @@ Second templates from [erikras/react-redux-universal-hot-example](https://github
 npm install
 ```
 
+## Run test
+
+```
+npm run test
+```
+
 ## Running Dev Server
 
 ```
