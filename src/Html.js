@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import serialize from 'serialize-javascript';
+import { footnotes } from './redux/data';
 import DocumentMeta from 'react-document-meta';
 const cdn = 'https://cdnjs.cloudflare.com/';
 import { gtmId } from "./config";
@@ -47,6 +48,7 @@ export default class Html extends Component {
         </head>
         <body>
           <div id="content" className="socialMovementCrime" dangerouslySetInnerHTML={{__html: content}}/>
+          <div className="footnotes" dangerouslySetInnerHTML={{__html: footnotes}} />
           <footer>
             <div>2015 Judicial Reform Foundation. Source code available on <a href="https://github.com/JRF-tw/law_in_social_movement" rel="external">GitHub</a>.</div>
           </footer>

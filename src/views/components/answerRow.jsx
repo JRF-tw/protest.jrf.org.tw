@@ -49,9 +49,9 @@ class AnswerRow extends React.Component {
           <button className="toggle" onClick={this.handleClick}>{this.state.open ? '隱藏' : '顯示'}</button>
           {answer}
         </div>
-        <div className="answerDetail" dangerouslySetInnerHTML={{__html: detail}} />
-        <div className="references">
-          <ul>
+        <div className="answerDetail">
+          <div className="content" dangerouslySetInnerHTML={{__html: detail}} />
+          <ul className="references">
             {references}
           </ul>
         </div>

@@ -348,11 +348,12 @@ export const defaultScore = {
   z: false
 };
 
-export const readme = `<p>這些狀況，很多都不是危言聳聽，而是司改會收集案件後，整理出來的狀況。</p>
+export const footnotes = `<p>這些狀況，很多都不是危言聳聽，而是司改會收集案件後，整理出來的狀況。</p>
 <p>當然，不是所有的人都會被起訴，一般來說，知名社運者被起訴的機會較高。但我們仍想提醒大家，在目前的台灣司法下，前往社運場合通常仍有相當的法律風險，尤其仍有衝突可能的場合。</p>
 <p>而且，有些起訴社運者的檢察官，還可能更有機會升官。我們想提醒大家，在現在的台灣，司法很多時候仍對當權者相對友善。</p>
-<p>該怎麼解決這個問題？事實上，如同行政、立法，司法一樣需要人民的監督。如果您有空，可以參與社運相關案件的法庭旁聽。如果您沒有時間，也歡迎您<a href="http://2015.jrf.org.tw/" target="_blank">支持民間司改會</a>，一起協助司法進行改革。</p>
-<p><a href="http://pnn.pts.org.tw/main/2015/08/14/%E3%80%90%E8%AA%AA%E6%B3%95%E3%80%91%E8%B5%B7%E8%A8%B4%E5%A4%AA%E9%99%BD%E8%8A%B1%E7%9A%84%E6%AA%A2%E5%AF%9F%E5%AE%98%E5%8D%87%E5%AE%98%E4%BA%86/" target="_blank">起訴太陽花的檢察官升官了</a></p>
-<p><a href="http://pnn.pts.org.tw/main/2014/04/02/%E3%80%90%E8%AA%AA%E6%B3%95%E3%80%91%E5%B0%8B%E6%89%BE%E5%85%B7%E5%82%99%E6%86%B2%E6%B3%95%E6%84%8F%E8%AD%98%E5%8F%88%E6%9C%89%E6%B0%91%E4%B8%BB%E9%97%9C%E6%87%B7%E7%9A%84%E6%AA%A2%E5%AF%9F%E5%AE%98/" target="_blank">尋找具備憲法意識又有民主關懷的檢察官</a></p>
-<p><a href="http://pnn.pts.org.tw/main/2015/03/21/%E3%80%90%E7%B5%90%E7%97%82324%E3%80%91%E5%A4%AA%E9%99%BD%E8%8A%B1%E9%81%8B%E5%8B%95%E5%B0%87%E5%8F%B8%E6%B3%95%E6%89%93%E5%9B%9E%E5%8E%9F%E5%BD%A2%EF%BC%9F/" target="_blank">太陽花運動將司法打回原形？</a></p>`;
-
+<p>該怎麼解決這個問題？事實上，如同行政、立法，司法一樣需要人民的監督。如果您有空，可以參與社運相關案件的法庭旁聽。如果您沒有時間，也歡迎您<a href="http://2015.jrf.org.tw/">支持民間司改會</a>，一起協助司法進行改革。</p>
+<div class="large-links">
+  <a class="link" href="http://pnn.pts.org.tw/main/2015/08/14/%E3%80%90%E8%AA%AA%E6%B3%95%E3%80%91%E8%B5%B7%E8%A8%B4%E5%A4%AA%E9%99%BD%E8%8A%B1%E7%9A%84%E6%AA%A2%E5%AF%9F%E5%AE%98%E5%8D%87%E5%AE%98%E4%BA%86/" rel="external">起訴太陽花的檢察官升官了</a>
+  <a class="link" href="http://pnn.pts.org.tw/main/2014/04/02/%E3%80%90%E8%AA%AA%E6%B3%95%E3%80%91%E5%B0%8B%E6%89%BE%E5%85%B7%E5%82%99%E6%86%B2%E6%B3%95%E6%84%8F%E8%AD%98%E5%8F%88%E6%9C%89%E6%B0%91%E4%B8%BB%E9%97%9C%E6%87%B7%E7%9A%84%E6%AA%A2%E5%AF%9F%E5%AE%98/" rel="external">尋找具備憲法意識又有民主關懷的檢察官</a>
+  <a class="link" href="http://pnn.pts.org.tw/main/2015/03/21/%E3%80%90%E7%B5%90%E7%97%82324%E3%80%91%E5%A4%AA%E9%99%BD%E8%8A%B1%E9%81%8B%E5%8B%95%E5%B0%87%E5%8F%B8%E6%B3%95%E6%89%93%E5%9B%9E%E5%8E%9F%E5%BD%A2%EF%BC%9F/" rel="external">太陽花運動將司法打回原形？</a>
+</div>`;
