@@ -13,7 +13,7 @@ class Reference extends React.Component {
 
   render() {
     const {name, link} = this.props;
-    return (<li><a href={link} target="_blank">{name}</a></li>);
+    return (<li><a href={link}>{name}</a></li>);
   }
 }
 
