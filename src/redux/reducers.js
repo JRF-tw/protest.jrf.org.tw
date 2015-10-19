@@ -1,6 +1,6 @@
 
 import { combineReducers } from 'redux';
-import { defaultScore } from './data';
+import { defaultScore } from '../data';
 import { UPDATE_SCORE, SHOW_RESULT } from './actions';
 
 // const initialState = {

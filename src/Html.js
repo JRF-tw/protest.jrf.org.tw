@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import serialize from 'serialize-javascript';
-import { footnotes } from './redux/data';
+import { footnotes } from './data';
 import DocumentMeta from 'react-document-meta';
 const cdn = 'https://cdnjs.cloudflare.com/';
 import { gtmId } from "./config";

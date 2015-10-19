@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import {questionData, answerData} from '../../redux/data';
+import {questionData, answerData} from '../../data';
 import {connect} from 'react-redux';
 import {updateScore, showResult} from '../../redux/actions';
 import QuestionTable from '../components/questionTable';

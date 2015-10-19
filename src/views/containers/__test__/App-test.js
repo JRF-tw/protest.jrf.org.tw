@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import App from '../App';
 import { Provider } from 'react-redux';
 import createStore from 'redux/create';
-import { questionData, answerData, footnotes } from 'redux/data';
+import { questionData, answerData, footnotes } from 'data';
 import { updateScore, showResult } from 'redux/actions';
 const { TestUtils } = React.addons;
 
@@ -69,11 +69,13 @@ describe('AppWithResult', () => {
 
   it('should render with correct answer detail', () => {
     const text = dom.getElementsByClassName('answerDetail')[0].textContent;
+    console.log(text);
     expect(text).to.equal(answerData[0].detail.replace(/(<([^>]+)>)/ig,""));
   });
 
   it('should render with correct footnotes', () => {
     const text = dom.getElementsByClassName('footnotes')[0].textContent;
+    console.log(text);
     expect(text).to.equal(footnotes.replace(/(<([^>]+)>)/ig,""));
   });
 
